@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoeyNjoy</title>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="all and (min-width:768px) and (max-width:1024px)">
+    <link rel="stylesheet" href="./phone.css" media="all and (max-width:768px)">
+</head>
+<body>
+ <header>
+  <nav>
+    <ul>
+      <li><a href="#">상의</a></li>
+      <li><a href="#">아우터</a></li>
+      <li><a href="#">하의</a></li>
+      <li><a href="#">스커트</a></li>
+      <li><a href="#">원피스</a></li>
+      <li><a href="#">패션잡화</a></li>
+    </ul>
+  </nav>
+  <div class="logo">
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="로고">
+        </a>
+  </div>
+  <div class="lnb">
+    <ul>
+      <li><a href="#">로그인</a></li>
+      <li><a href="#">회원가입</a></li>
+    </ul>
+  </div>
+  <div class="bar">
+    <span></span> 
+    <span></span> 
+    <span></span> 
+  </div>
+  <div class="sidemenu">
+    <div class="snb">
+      <ul>
+        <li><a href="#">상의</a></li>
+        <li><a href="#">아우터</a></li>
+        <li><a href="#">하의</a></li>
+        <li><a href="#">스커트</a></li>
+        <li><a href="#">원피스</a></li>
+        <li><a href="#">패션잡화</a></li>
+        <li>
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+        </li>
+        <li>
+          <p>zoeyNjoy</p>
+          <p>월 - 금 : 09:00 - 18:00</p>
+          <p>점심시간 : 12:00 - 13:00</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </header>
+ <main>
+  <div class="swiper slide">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/slide1.png" alt="MD픽 여름 매쉬 후드 집업">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/slide2.png" alt="반팔 트위드 자켓">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/slide3.png" alt="레이스 롱 드레스">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="new">
+    <h2>new</h2>
+    <div class="swiper newslide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img1.png" alt="">
+          <p class="name"><span class="point">[당일배송]</span>  여름 일자핏 데님팬츠</p>
+          <p class="price">25,000원</p>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img2.png" alt="">
+          <p class="name">린넨 스퀘어 점프수트</p>
+          <p class="price">43,000원</p>
+  </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img3.png" alt="">
+          <p class="name"><span class="point">[여름니트]</span>  여름니트 볼레로 가디건</p>
+          <p class="price">20,000원</p>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img4.png" alt="">
+          <p class="name"><span class="point">[MD Pick]</span> 여름 매쉬 후드집업</p>
+          <p class="price">30,000원</p>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img5.png" alt="">
+          <p class="name">레이스 롱 끈나시 원피스</p>
+          <p class="price">28,000원</p>
+  </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img6.png" alt="">
+          <p class="name">반팔 트위드 자켓</p>
+          <p class="price">32,000원</p>
+  </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="./images/img7.png" alt="">
+          <p class="name"><span class="point">[당일배송]</span> CUTE 크롭 반팔 티셔츠</p>
+          <p class="price">15,000원</p>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="best">
+    <h2>weekly best</h2>
+    <div class="swiper bestslide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/img1.png" alt="">
+          <p class="name"><span class="point">[당일배송]</span>  여름 일자핏 데님팬츠</p>
+          <p class="price">25,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img2.png" alt="">
+                <p class="name">린넨 스퀘어 점프수트</p>
+                <p class="price">43,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img3.png" alt="">
+                <p class="name"><span class="point">[여름니트]</span> <span class="point">[MD Pick]</span> 여름니트 볼레로 가디건</p>
+                <p class="price">20,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img4.png" alt="">
+                <p class="name"><span class="point">[MD Pick]</span> 여름 매쉬 후드집업</p>
+                <p class="price">30,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img5.png" alt="">
+                <p class="name">레이스 롱 끈나시 원피스</p>
+                <p class="price">28,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img6.png" alt="">
+                <p class="name">반팔 트위드 자켓</p>
+                <p class="price">32,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img7.png" alt="">
+                <p class="name"><span class="point">[당일배송]</span> <span class="point">[MD Pick]</span> CUTE 크롭 반팔 티셔츠</p>
+                <p class="price">15,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img8.png" alt="">
+                <p class="name"><span class="point">[당일배송]</span> 연청 워싱 통바지</p>
+                <p class="price">23,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img9.png" alt="">
+                <p class="name"><span class="point">[MD Pick]</span> 린넨 세미크롭 셔츠</p>
+                <p class="price">19,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img10.png" alt="">
+                <p class="name"><span class="point">[MD Pick]</span> 뿔테 스퀘어 선글라스</p>
+                <p class="price">15,000원</p>
+              </a>
+            </li>      
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/img10.png" alt="">
+                <p class="name">뿔테 스퀘어 선글라스</p>
+                <p class="price">15,000원</p>
+              </a>
+            </li>  
+            <li>
+              <a href="#">
+                <img src="./images/img2.png" alt="">
+                <p class="name">린넨 스퀘어 점프수트</p>
+                <p class="price">43,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img3.png" alt="">
+                <p class="name"><span class="point">[여름니트]</span>  여름니트 볼레로 가디건</p>
+                <p class="price">20,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img4.png" alt="">
+                <p class="name"><span class="point">[MD Pick]</span> 여름 매쉬 후드집업</p>
+                <p class="price">30,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img9.png" alt="">
+                <p class="name"><span class="point">[MD Pick]</span> 린넨 세미크롭 셔츠</p>
+                <p class="price">19,000원</p>
+              </a>
+            </li>  
+            <li>
+              <a href="#">
+                <img src="./images/img5.png" alt="">
+                <p class="name">레이스 롱 끈나시 원피스</p>
+                <p class="price">28,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img6.png" alt="">
+                <p class="name">반팔 트위드 자켓</p>
+                <p class="price">32,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img8.png" alt="">
+                <p class="name"><span class="point">[당일배송]</span> 연청 워싱 통바지</p>
+                <p class="price">23,000원</p>
+              </a>
+            </li>  
+            <li>
+              <a href="#">
+                <img src="./images/img7.png" alt="">
+                <p class="name"><span class="point">[당일배송]</span> CUTE 크롭 반팔 티셔츠</p>
+                <p class="price">15,000원</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/img1.png" alt="">
+          <p class="name"><span class="point">[당일배송]</span>  여름 일자핏 데님팬츠</p>
+          <p class="price">25,000원</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <div class="cont">
+    <ul>
+      <li><a href="#"><img src="./images/event1.png" alt=""></a></li>
+      <li><a href="#"><img src="./images/event2.png" alt=""></a></li>
+    </ul>
+  </div>
+  <div class="md">
+    <h2>md's pick</h2>
+    <div class="swiper pick">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./images/img4.png" alt="">
+            <p class="name"><span class="point">[MD Pick]</span> 여름 매쉬 후드집업</p>
+            <p class="price">30,000원</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./images/img9.png" alt="">
+            <p class="name"><span class="point">[MD Pick]</span> 린넨 세미크롭 셔츠</p>
+            <p class="price">19,000원</p>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./images/img3.png" alt="">
+            <p class="name"><span class="point">[여름니트]</span> <span class="point">[MD Pick]</span> 여름니트 볼레로 가디건</p>
+            <p class="price">20,000원</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./images/img10.png" alt="">
+            <p class="name"><span class="point">[MD Pick]</span> 뿔테 스퀘어 선글라스</p>
+            <p class="price">15,000원</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./images/img7.png" alt="">
+            <p class="name"><span class="point">[당일배송]</span> <span class="point">[MD Pick]</span> CUTE 크롭 반팔 티셔츠</p>
+            <p class="price">15,000원</p>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <div class="review">
+    <h2>Review</h2>
+    <div class="swiper reviewarp">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="https://via.placeholder.com/272x400" alt="">
+            <p class="name">옷이름</p>
+            <p class="txt">후기</p>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="ft_top">
+    <ul>
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li class="red"><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">이용안내</a></li>
+    </ul>
+  </div>
+  <div class="ft_center">
+    <ul>
+      <li><a href="#"><img src="https://via.placeholder.com/120x50" alt="로고"></a></li>
+      <li><a href="#">주소</a></li>
+      <li><a href="#">사업자등록번호</a></li>
+      <li><a href="#">계좌번호</a></li>
+      <li><a href="#">상호명</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
