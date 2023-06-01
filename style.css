@@ -218,9 +218,8 @@ main .section{
 }
 main .join{
   width: 100%;
-  border-top: 1px solid var(--mainColor);
   position: relative;
-  padding: 100px 0 150px;
+  padding: 0 0 150px;
 }
 .join .txt{
   max-width: 1440px;
@@ -435,11 +434,11 @@ main .loginwrap{
   position: absolute;
   right: -18px;
 }
-form ul li{
+form .idwrap li{
   width: 100%;
   line-height: 50px;
 }
-form ul li:nth-of-type(3){
+form .idwrap li:nth-of-type(3){
   text-align: center;
   background-color: var(--bgColor);
   border:1px solid var(--bgColor);
