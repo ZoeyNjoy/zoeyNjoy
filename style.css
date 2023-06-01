@@ -245,7 +245,7 @@ form .formlist li{
   font: 400 .9rem/3rem 'sans-serif';
   position: relative;
 }
-form li:last-child{
+form .formlist li:last-child{
   border-bottom: 1px solid var(--lineColor);
 }
 form p:nth-of-type(1){
@@ -389,13 +389,12 @@ main .loginwrap{
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 1px solid var(--lineColor);
-  padding: 10px 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .formwrap ul{
   width: 100%;
-  line-height: 50px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -404,14 +403,21 @@ main .loginwrap{
   width: 50%;
   display: flex;
   box-sizing: border-box;
+  position: relative;
 }
-.id_save input{
-  width: 30px;
+.id_save input[type="checkbox"]{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  background: var(--lineColor);
 }
-.id_save input:checked:before{
-  background-color:green;
-  }
 .id_save label{
+  position: absolute;
+  left: 50px;
   width: 100px;
 }
 .id_pw_find{
@@ -428,4 +434,21 @@ main .loginwrap{
   display: inline;
   position: absolute;
   right: -18px;
+}
+form ul li{
+  width: 100%;
+  line-height: 50px;
+}
+form ul li:nth-of-type(3){
+  text-align: center;
+  background-color: var(--bgColor);
+  border:1px solid var(--bgColor);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+form ul li:nth-of-type(3):hover{
+  transition: all .3s;
+  background-color: #fff;
+  border:1px solid var(--pointColor);
 }
