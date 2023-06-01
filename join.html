@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoeyNjoy</title>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="all and (min-width:768px) and (max-width:1024px)">
+    <link rel="stylesheet" href="./phone.css" media="all and (max-width:768px)">
+</head>
+<body>
+  <header>
+    <div class="headerwrap">
+      <nav>
+        <ul>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">하의</a></li>
+          <li><a href="#">스커트</a></li>
+          <li><a href="#">원피스</a></li>
+          <li><a href="#">패션잡화</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="로고">
+        </a>
+      </div>
+      <div class="lnb">
+        <ul>
+          <li><a href="./login.html">로그인</a></li>
+          <li><a href="./join.html">회원가입</a></li>
+        </ul>
+      </div>
+      <div class="bar">
+        <span></span> 
+        <span></span> 
+        <span></span> 
+      </div>
+      <div class="sidemenu">
+        <div class="snb">
+          <ul>
+            <li><a href="#">상의</a></li>
+            <li><a href="#">아우터</a></li>
+            <li><a href="#">하의</a></li>
+            <li><a href="#">스커트</a></li>
+            <li><a href="#">원피스</a></li>
+            <li><a href="#">패션잡화</a></li>
+            <li class="snbmenu">
+              <a href="#">로그인</a>
+              <a href="#">회원가입</a>
+            </li>
+            <li class="snbcs">
+              <p>zoeyNjoy</p>
+              <p>월 - 금 : 09:00 - 18:00</p>
+              <p>점심시간 : 12:00 - 13:00</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="section">
+        <div class="title">
+          <h2>회원가입</h2>
+          <p>아래의 정보를 입력하세요</p>
+        </div>
+    </div>
+    <div class="join">
+      <p class="txt">* 표시는 필수사항입니다.</p>
+      <form method="post">
+        <ul class="formlist">
+          <li>
+            <p class="point">이름</p><input type="text" name="user_id"><span>(영문소문자/숫자, 4-16자)</span>
+          </li>
+          <li>
+            <p class="point">비밀번호</p><input type="password" name="user_pw"><span>(영문 대소문자/숫자/특수문자 중 3가지 이상 조합, 8-16자)</span>                    
+          </li>
+          <li>
+            <p class="point">비밀번호 확인</p><input type="password" name="user_pw">                       
+          </li>
+          <li>
+            <p class="point">이름</p><input type="text" name="user_name">
+          </li>
+          <li>
+            <p class="point">주소</p>
+            <div>
+              <input type="text" name="postcode" class="postcode" placeholder="우편번호" readonly/>
+              <button type="button">찾기</button>              
+            </div>
+            <div>
+              <input type="text" class="address" placeholder="기본 주소" readonly/>
+              <input type="text" class="address" placeholder="나머지 주소(선택입력)" required/>
+            </div>
+          </li>
+          <li>
+            <p>일반전화</p>
+            <select name="phone1" class="phone">
+              <option value="02">02</option>
+              <option value="031">031</option>
+              <option value="032">032</option>
+              <option value="033">033</option>
+              <option value="041">041</option>
+              <option value="042">042</option>
+              <option value="043">043</option>
+              <option value="044">044</option>
+              <option value="051">051</option>
+              <option value="052">052</option>
+              <option value="053">053</option>
+              <option value="054">054</option>
+              <option value="055">055</option>
+              <option value="061">061</option>
+              <option value="062">062</option>
+              <option value="063">063</option>
+              <option value="064">064</option>
+              <option value="0502">0502</option>
+              <option value="0503">0503</option>
+              <option value="0504">0504</option>
+              <option value="0505">0505</option>
+              <option value="0506">0506</option>
+              <option value="0507">0507</option>
+              <option value="070">070</option>
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="016">016</option>
+              <option value="017">017</option>
+              <option value="018">018</option>
+              <option value="019">019</option>
+              <option value="0508">0508</option>
+            </select>
+            -<input type="tel" class="tel">-<input type="tel" class="tel">
+          </li>
+          <li>
+            <p class="point">휴대전화</p>
+            <select name="phone2" class="phone">
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="016">016</option>
+              <option value="017">017</option>
+              <option value="018">018</option>
+              <option value="019">019</option>
+            </select>
+            -<input type="tel" class="tel">-<input type="tel" class="tel">
+          </li>
+          <li>
+            <p class="point">이메일</p>
+            <input type="email" name="email" class="email">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="ft_top">
+      <ul class="ft_left">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li class="red"><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용안내</a></li>
+      </ul>
+      <ul class="ft_right">
+        <li><a href="#"><img src="./images/insta.svg" alt=""></a></li>
+        <li><a href="#"><img src="./images/talk.svg" alt=""></a></li>
+        <li class="logo"><a href="#"><img src="./images/logo.png" alt="로고"></a></li>
+      </ul>
+    </div>
+    <div class="ft_center">
+      <div class="cs">
+        <h2>000-0000-0000</h2>
+        <p>월요일 - 금요일</p>
+        <p>09:00 - 18:00</p>
+        <p>점심시간</p>
+        <p>12:00 - 13:00</p>
+      </div>
+      <ul>
+        <li><a href="#">대한민국 서울특별시 어쩌구 저쩌구 911번지, 저쩌구빌딩</a></li>
+        <li><a href="#">사업자등록번호 : 12345678901234</a></li>
+        <li><a href="#">계좌번호 : 조이은행 1234567-89-0123455 홍길동</a></li>
+        <li><a href="#">사업자명 : 홍길동 ( rumrum911@naver.com )</a></li>
+        <li><a href="#">Copyright 2023 Park Purum All Rights Reserved</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -7,7 +7,7 @@ $(function(){
   
     $this.on('click', function(e){
       e.preventDefault();
-      $(this).toggleClass('active-1');
+      $(this).toggleClass('active');
     })
   });
   
@@ -70,7 +70,8 @@ const slide = new Swiper("main .slide", {
       },
     },
     loop: true,
-    speed : 1000,
+    speed : 100,
+    centeredSlides: true,
     // slidesPerGroup: 1,
     // loopAdditionalSlides: 1,
     // loopFillGroupWithBlank: true, 
@@ -78,8 +79,8 @@ const slide = new Swiper("main .slide", {
       delay: 300,
       disableOnInteraction: false,
     },
-
     });
+    newSlide.slideTo(3,0);
 
 
     var bestSlide = new Swiper(".best .bestslide", {
