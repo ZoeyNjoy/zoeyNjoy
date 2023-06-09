@@ -50,47 +50,40 @@ const slide = new Swiper("main .slide", {
   });
 
 
-  var newSlide = new Swiper(".new .newslide", {
-    breakpoints:{
-      1024: {
-        slidesPerView: '5',
-        spaceBetween: '20'
-      },
-      768: {
-        slidesPerView: '4',
-        spaceBetween: '10'
-      },
-      640: {
-        slidesPerView: '3',
-        spaceBetween: '10'
-      },
-      320: {
-        slidesPerView: '1',
-        spaceBetween: '10'
-      },
+  var newSlide = new Swiper(".new .newslide", {breakpoints: {
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 20,
     },
-    loop: true,
-    speed : 100,
-    centeredSlides: true,
-    // slidesPerGroup: 1,
-    // loopAdditionalSlides: 1,
-    // loopFillGroupWithBlank: true, 
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+  },
+  loop: true,
+    speed : 1500,
+    loopAdditionalSlides: 1,
     autoplay: {
-      delay: 300,
+      delay: 1500,
       disableOnInteraction: false,
     },
-    });
-    newSlide.slideTo(3,0);
+  });
 
 
-    var bestSlide = new Swiper(".best .bestslide", {
-    
+    var bestSlide = new Swiper(".best .bestslide", {    
       spaceBetween: 0,
       loop: true,
-      speed : 100,
+      speed : 1500,
       loopAdditionalSlides: 1,
       slidesPerGroup: 1,
-      // loopFillGroupWithBlank: true, 
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -98,23 +91,37 @@ const slide = new Swiper("main .slide", {
       });
 
       var mdSlide = new Swiper(".md .pick", {
-        slidesPerView: 'auto',
-        spaceBetween: 20,
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+        },
+        slidesPerGroup: 1,
         loop: true,
-        speed : 2000,
+        loopFillGroupWithBlank: true,
+        speed :1000,
         autoplay: {
-          delay: 3000,
+          delay:2000,
           disableOnInteraction: false,
         },
-        loopAdditionalSlides: 1,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        slidesPerGroup: 1,
-        // centeredSlides: true,
-        // loopFillGroupWithBlank: true, 
-        });
+      });
 
 
         var review = new Swiper(".review .reviewarp", {
@@ -144,8 +151,6 @@ const slide = new Swiper("main .slide", {
             prevEl: ".swiper-button-prev",
           },
           slidesPerGroup: 1,
-          // centeredSlides: true,
-          // loopFillGroupWithBlank: true, 
           });
 
 

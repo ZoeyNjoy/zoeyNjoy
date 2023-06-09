@@ -38,6 +38,7 @@ main .slide{
 }
 .slide img{
   width: 100%;
+  display: block;
 }
 .slide .swiper-pagination-bullet {
     width: 20px;
@@ -78,6 +79,7 @@ main .slide{
   }
   .newslide img{
     width: 100%;
+    display: block;
     object-fit: cover;
     border: 1px solid var(--basicColor);
     box-sizing: border-box;
@@ -110,6 +112,7 @@ main .slide{
   .bestslide .swiper-slide li img{
     width: 100%;
     object-fit: cover;
+    display: block;
   }
 
   /*  */
@@ -133,6 +136,7 @@ main .slide{
     max-width: 1440px;
     margin: auto;
     margin-top: 200px;
+    position: relative;
   }
   .md h2{
     text-align: center;
@@ -142,38 +146,29 @@ main .slide{
 .md .pick{
     width: 980px;
     margin: auto;
-  }
+    border: 1px solid red;
+}
 .pick .swiper-wrapper{
-  width: 856px;
-  margin: auto;
-  }
-.pick .swiper-slide{
-  width: 272px;
+  width: 100%;
 }
 .pick .swiper-slide img{
   width: 100%;
-  object-fit: contain;
 }
-.pick .swiper-button-next,
-.pick .swiper-button-prev{
-  width: 60px;
+.md .swiper-button-next,
+.md .swiper-button-prev{
+  width: 200px;
   height:100%;
   background-color: rgba(255, 255, 255, 0.6);
   margin-top: 0;
 }
-.pick .swiper-button-next{
+.md .swiper-button-next{
   top: 0;
-  right: 0;
+  right: 30px;
 }
-.pick .swiper-button-prev{
+.md .swiper-button-prev{
   top: 0;
-  left:0;
+  left:30px;
 }
-.pick .swiper-button-next::after,
-.pick .swiper-button-prev::after{
-  display: none;  
-}
-
    /* 엠디 */
    main .review{
     width: 100%;
@@ -181,6 +176,7 @@ main .slide{
     padding-top: 80px;
     padding-bottom: 200px;
     box-sizing: border-box;
+    position: relative;
     background-color: var(--bgColor);
   }
   .review h2{
@@ -198,6 +194,7 @@ main .slide{
     width: 100%;
     border: 1px solid var(--basicColor);
     box-sizing: border-box;
+    display: block;
   }
 
 

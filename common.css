@@ -26,18 +26,24 @@ header{
 }
 header .headerwrap{
     max-width: 1440px;
+    height: 120px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .headerwrap nav{
-    width: 55%;
-    line-height: 120px;
+    width: 40%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 nav ul{
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 nav li{
     width: calc(100% / 6);
@@ -46,26 +52,39 @@ nav li{
 nav li a{
     display: block;
     width: 100%;
+    line-height: 50px;
 }
 .headerwrap .logo{
-    width: 100px;
+    width: 120px;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.headerwrap .logo a{
+  display: block;
 }
 .logo img{
   width: 100%;
   object-fit: cover;
 }
 .headerwrap .lnb{
-    width: 50%;
-    line-height: 120px;
+    width: 11%;
+    line-height: 50px;
+    position: absolute;
+    top: 60%;
+    right: 4%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 .lnb ul{
+  width: 100%;
     display: flex;
-    justify-content: end;
-    margin-right: 5%;
 }
 .lnb li{
-    width: 25%;
+    width: 50%;
     text-align: center;
 }
 .lnb a{
@@ -77,10 +96,13 @@ nav li a{
 header .bar{
     width: 50px;
     height: 50px;
-    margin-right: 20px;
     padding: 12px 5px;
     box-sizing: border-box;
     z-index: 3;
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    transform: translateY(-50%);
 }
 .bar span{
     display: block;
