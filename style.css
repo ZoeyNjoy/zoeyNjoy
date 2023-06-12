@@ -36,6 +36,10 @@ main{
 main .slide{
   width: 100%;
 }
+.slide .swiper-slide a{
+  display: block;
+  width: 100%;
+}
 .slide img{
   width: 100%;
   display: block;
@@ -86,34 +90,49 @@ main .slide{
   }
   /* 베스트 18개 */
   main .best{
-    max-width: 1440px;
-    margin: auto;
+    width: 100%;
     margin-top: 150px;
+    position: relative;
   }
   .best h2{
+    max-width: 1440px;
+    margin: auto;
     font: 900 1.5rem/3rem 'sans-serif';
     text-transform: capitalize;
   }
   .best .bestslide{
-    width: 100%;
+    max-width: 1440px;
+    margin: auto;
   }
   .bestslide .swiper-wrapper{
     width: 100%;
     display: flex;
   }
   .bestslide .swiper-slide ul{
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .bestslide .swiper-slide li{
-    width: 272px;
+    display: block;
+    width: calc(20% - 20px);
   }
   .bestslide .swiper-slide li img{
     width: 100%;
     object-fit: cover;
     display: block;
   }
+.best .swiper-button-next,
+.best .swiper-button-prev{
+  width: 50px;
+  height:100%;
+  padding: 3%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
 
   /*  */
   main .cont{
@@ -144,9 +163,8 @@ main .slide{
     text-transform: capitalize;
   }
 .md .pick{
-    width: 980px;
+    width: 65%;
     margin: auto;
-    border: 1px solid red;
 }
 .pick .swiper-wrapper{
   width: 100%;
@@ -154,22 +172,26 @@ main .slide{
 .pick .swiper-slide img{
   width: 100%;
 }
-.md .swiper-button-next,
-.md .swiper-button-prev{
-  width: 200px;
-  height:100%;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-top: 0;
+.md .mdbtn{
+  width:75%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .md .swiper-button-next{
-  top: 0;
-  right: 30px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 .md .swiper-button-prev{
-  top: 0;
-  left:30px;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
 }
-   /* 엠디 */
+   /* 리뷰 */
    main .review{
     width: 100%;
     margin-top: 150px;
@@ -196,6 +218,17 @@ main .slide{
     box-sizing: border-box;
     display: block;
   }
+
+.review .swiper-button-next,
+.review .swiper-button-prev{
+  width: 50px;
+  height:100%;
+  padding: 3%;
+  box-sizing: border-box;
+  position: absolute;
+  top: -30px;
+  z-index: 1;
+}
 
 
   /* 회원가입페이지 */

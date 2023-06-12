@@ -16,26 +16,11 @@ $(".bar").on('click', function () {
   $('.sidemenu').toggleClass('on');
 });
 
-const slide = new Swiper("main .slide", {
-  loop: true,
-  speed : 3000,
-  autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-  },
-  spaceBetween: 0,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  }
-});
-
-
   var mainSlide = new Swiper("main .slide", {
     spaceBetween: 0,
     loop: true,
-    speed : 3000,
     loopAdditionalSlides: 1,
+    speed : 5000,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -44,7 +29,7 @@ const slide = new Swiper("main .slide", {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
+        return '<span class="' + className + '">' + "</span>";
       },
     },
   });
@@ -69,10 +54,10 @@ const slide = new Swiper("main .slide", {
     },
   },
   loop: true,
-    speed : 1500,
+    speed : 3000,
     loopAdditionalSlides: 1,
     autoplay: {
-      delay: 1500,
+      delay: 2000,
       disableOnInteraction: false,
     },
   });
@@ -112,9 +97,9 @@ const slide = new Swiper("main .slide", {
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
-        speed :1000,
+        speed :4000,
         autoplay: {
-          delay:2000,
+          delay:3000,
           disableOnInteraction: false,
         },
         navigation: {
@@ -144,7 +129,11 @@ const slide = new Swiper("main .slide", {
             },
           },
           loop: true,
-          speed : 100,
+          speed :5000,
+          autoplay: {
+            delay:3000,
+            disableOnInteraction: false,
+          },
           loopAdditionalSlides: 1,
           navigation: {
             nextEl: ".swiper-button-next",
